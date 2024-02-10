@@ -3,7 +3,8 @@ import QRCode from "react-qr-code";
 import { encrypt } from "../utils";
 
 export function QRGenerator() {
-  const newURL = window.location.protocol + "//" + window.location.host + "/";
+  const newURL =
+    window.location.protocol + "//" + window.location.host + "/qr/";
 
   const [value, setValue] = useState("");
 
